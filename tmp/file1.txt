@@ -1,0 +1,7 @@
+guanqingchaoSuccess!
+就这？是的，就是这么简单的基础错误，我排查了一天，淦，rx订阅要取消这可是常识：
+
+要么引入生命周期管理；
+要么定义CompositeSubscription，在Activity、Fragment销毁时clear()
+要么单独取消订阅，RxJava2用unsubscribe()，RxJava1用dispose();
+
