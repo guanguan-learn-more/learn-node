@@ -1,13 +1,13 @@
 let http = require("http");
 const fs = require("fs");
 let server = http.createServer(function(req, res) {
-  if (req.url == "/getData") {
-    // fs.readFile("./tmp/file1.txt", (err, data) => {
-    //   res.statusCode = 200;
-    //   res.setHeader("Content-Type", "text/plain");
-    //   res.end(data);
-    // });
-    fs.createReadStream("./tmp/file2.txt").pipe(res);
+  if (req.url == "/getFile") {
+    fs.readFile("../tmp/b.txt", (err, file) => {
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "text/plain");
+      res.end(file);
+    });
+    // fs.createReadStream("../tmp/b.txt").pipe(res);
   } else if (req.url === "/post") {
     var content = "";
 
@@ -26,4 +26,8 @@ let server = http.createServer(function(req, res) {
     res.end("404 Not Found!");
   }
 });
-server.listen(8000, () => console.log("服务端启动===>"));
+server.listen(1334, () => console.log("服务端启动===>"));
+
+
+
+// curl -v -H "Cookie: foo=bar; baz=val" "http://127.0.0.1:1334/getFile"
