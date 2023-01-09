@@ -1,18 +1,28 @@
 {
-  "name": "learn-node",
+  "name": "joy_guan_npm_test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=dev node process.js"
+    "start": "NODE_ENV=dev node process.js",
+    "dev": "cross-env NODE_ENV=dev nodemon ./module/index.js"
+  },
+  "bin": {
+    "test-bin": "./bin-demo/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
     "mime": "^3.0.0",
+    "multiparty": "^4.2.3",
     "pm2": "^4.5.6",
     "progress": "^2.0.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.20",
+    "query-string": "^8.1.0"
   }
 }
