@@ -15,6 +15,8 @@
 //     name:'guan'
 // }
 
+console.log('执行了a文件')
+
 exports = {
     name:'exports',
     like:'money'
