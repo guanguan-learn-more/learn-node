@@ -36,6 +36,9 @@ const user = {
 const insert = `
 INSERT INTO Users set ?
 `
+// const insert = `
+// INSERT INTO Users set name=?, password=?
+// `
 db.query(insert,user,(err,result,fields)=>{
       console.log('插入数据成功',result)
 })

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev:express": "cross-env NODE_ENV=dev nodemon ./express/index.js",
+    "dev:stream": "cross-env NODE_ENV=dev nodemon ./stream/index.js",
     "start": "NODE_ENV=dev node process.js",
     "dev": "cross-env NODE_ENV=dev nodemon ./module/index.js",
     "dev:module": "cross-env NODE_ENV=dev nodemon ./module/cache.js",
