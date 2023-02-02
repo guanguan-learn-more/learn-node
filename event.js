@@ -114,7 +114,7 @@
 // })
 
 // emitter.emit('test');
-
+// 23443
 //DEMO4:同步
 const events = require("events");
 const emitter = new events.EventEmitter();
