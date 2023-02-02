@@ -115,6 +115,8 @@
 
 // emitter.emit('test');
 
+// hotfix
+
 //DEMO4:同步
 const events = require("events");
 const emitter = new events.EventEmitter();
