@@ -6,7 +6,6 @@ const app = express();
 const router = require('./routes');//引入路由
 const port = 3000;
 
-
 //定义中间件
 const middleware1 = (req,res,next)=>{
     console.log('这是middleware 1');
