@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev:koa": "cross-env NODE_ENV=develop nodemon ./koa/index.js",
     "dev:express": "cross-env NODE_ENV=dev nodemon ./express/index.js",
     "dev:stream": "cross-env NODE_ENV=dev nodemon ./stream/index.js",
     "start": "NODE_ENV=dev node process.js",
@@ -21,6 +22,7 @@
     "@ali/tps-node": "^3.0.0",
     "axios": "^0.21.1",
     "express": "^4.18.2",
+    "koa": "^2.14.1",
     "lib-login": "0.0.22",
     "mime": "^3.0.0",
     "multiparty": "^4.2.3",
